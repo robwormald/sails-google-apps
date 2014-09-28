@@ -1,0 +1,42 @@
+{
+  "name": "waterline-sails-google-apps",
+  "version": "0.10.0",
+  "description": "sails-google-apps adapter for Sails / Waterline",
+  "main": "adapter.js",
+  "scripts": {
+    "test": "node test/integration/runner -R spec -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/balderdashy/waterline-%s.git"
+  },
+  "keywords": [
+    "sails-google-apps",
+    "adapter",
+    "sails",
+    "waterline",
+    "sails.js",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "node-redis": "^0.1.7",
+    "parse-redis-url": "0.0.1",
+    "redis": "^0.10.3"
+  },
+  "devDependencies": {
+    "waterline-adapter-tests": "~0.10.0",
+    "mocha": "*",
+    "captains-log": "~0.11.0"
+  },
+  "waterlineAdapter": {
+    "type": "sails-google-apps",
+    "interfaces": [
+      "semantic",
+      "queryable"
+    ],
+    "waterlineVersion": "~0.10.0"
+  }
+}
